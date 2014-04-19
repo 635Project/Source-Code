@@ -9,6 +9,8 @@ public class Category {
 	public int getCategoryID() {
 		return CategoryID;
 	}
+
+	//this is a testing for commitment
 	public void setCategoryID(int categoryID) {
 		CategoryID = categoryID;
 	}
