@@ -54,6 +54,8 @@ Partial Class FormMain
         Me.DateTimePickerExpirationDate = New System.Windows.Forms.DateTimePicker()
         Me.ComboBoxNotifcationDays = New System.Windows.Forms.ComboBox()
         Me.ComboBoxLocation = New System.Windows.Forms.ComboBox()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.ComboBoxCategory = New System.Windows.Forms.ComboBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.ButtonAddItemDone = New System.Windows.Forms.Button()
         Me.ButtonAddItemUpdate = New System.Windows.Forms.Button()
@@ -66,9 +68,6 @@ Partial Class FormMain
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.TabPageReports = New System.Windows.Forms.TabPage()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
         Me.TabPageSettings = New System.Windows.Forms.TabPage()
         Me.Button13 = New System.Windows.Forms.Button()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
@@ -87,9 +86,60 @@ Partial Class FormMain
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
-        Me.Label21 = New System.Windows.Forms.Label()
-        Me.ComboBoxCategory = New System.Windows.Forms.ComboBox()
-        Me.DataGridViewReport = New System.Windows.Forms.DataGridView()
+        Me.Unit = New System.Windows.Forms.Label()
+        Me.ProductDetail = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.Label24 = New System.Windows.Forms.Label()
+        Me.TextBox9 = New System.Windows.Forms.TextBox()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.Label26 = New System.Windows.Forms.Label()
+        Me.Label27 = New System.Windows.Forms.Label()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.Label28 = New System.Windows.Forms.Label()
+        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
+        Me.Label29 = New System.Windows.Forms.Label()
+        Me.Label30 = New System.Windows.Forms.Label()
+        Me.ComboBox5 = New System.Windows.Forms.ComboBox()
+        Me.TextBox11 = New System.Windows.Forms.TextBox()
+        Me.ComboBox6 = New System.Windows.Forms.ComboBox()
+        Me.Label31 = New System.Windows.Forms.Label()
+        Me.TextBox10 = New System.Windows.Forms.TextBox()
+        Me.TextBox12 = New System.Windows.Forms.TextBox()
+        Me.TextBox13 = New System.Windows.Forms.TextBox()
+        Me.TextBox14 = New System.Windows.Forms.TextBox()
+        Me.TextBox15 = New System.Windows.Forms.TextBox()
+        Me.TextBox16 = New System.Windows.Forms.TextBox()
+        Me.TextBox17 = New System.Windows.Forms.TextBox()
+        Me.TextBox18 = New System.Windows.Forms.TextBox()
+        Me.TableLayoutPanel4 = New System.Windows.Forms.TableLayoutPanel()
+        Me.TextBox19 = New System.Windows.Forms.TextBox()
+        Me.Label32 = New System.Windows.Forms.Label()
+        Me.Label33 = New System.Windows.Forms.Label()
+        Me.TextBox20 = New System.Windows.Forms.TextBox()
+        Me.Label34 = New System.Windows.Forms.Label()
+        Me.TextBox21 = New System.Windows.Forms.TextBox()
+        Me.Label35 = New System.Windows.Forms.Label()
+        Me.Label36 = New System.Windows.Forms.Label()
+        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
+        Me.ComboBox7 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox8 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox9 = New System.Windows.Forms.ComboBox()
+        Me.Label37 = New System.Windows.Forms.Label()
+        Me.ComboBox10 = New System.Windows.Forms.ComboBox()
+        Me.TextBox22 = New System.Windows.Forms.TextBox()
+        Me.Label38 = New System.Windows.Forms.Label()
+        Me.Label39 = New System.Windows.Forms.Label()
+        Me.Label40 = New System.Windows.Forms.Label()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.TabPageReports = New System.Windows.Forms.TabPage()
         Me.TabControlMain.SuspendLayout()
         Me.TabPageMain.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
@@ -99,9 +149,10 @@ Partial Class FormMain
         Me.TabPageUpdateItem.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPageSearch.SuspendLayout()
-        Me.TabPageReports.SuspendLayout()
         Me.TabPageSettings.SuspendLayout()
-        CType(Me.DataGridViewReport, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TableLayoutPanel3.SuspendLayout()
+        Me.TableLayoutPanel4.SuspendLayout()
+        Me.TabPageReports.SuspendLayout()
         Me.SuspendLayout()
         '
         'TabControlMain
@@ -336,7 +387,6 @@ Partial Class FormMain
         Me.TableLayoutPanel2.ColumnCount = 2
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.89451!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.10548!))
-        Me.TableLayoutPanel2.Controls.Add(Me.Label15, 0, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.TextBoxQuantity, 1, 4)
         Me.TableLayoutPanel2.Controls.Add(Me.Label16, 0, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.Label17, 0, 2)
@@ -348,11 +398,16 @@ Partial Class FormMain
         Me.TableLayoutPanel2.Controls.Add(Me.DateTimePickerExpirationDate, 1, 2)
         Me.TableLayoutPanel2.Controls.Add(Me.ComboBoxNotifcationDays, 1, 3)
         Me.TableLayoutPanel2.Controls.Add(Me.ComboBoxLocation, 1, 5)
-        Me.TableLayoutPanel2.Controls.Add(Me.Label21, 0, 6)
         Me.TableLayoutPanel2.Controls.Add(Me.ComboBoxCategory, 1, 6)
+        Me.TableLayoutPanel2.Controls.Add(Me.Unit, 0, 7)
+        Me.TableLayoutPanel2.Controls.Add(Me.ComboBox1, 1, 7)
+        Me.TableLayoutPanel2.Controls.Add(Me.TextBox7, 1, 8)
+        Me.TableLayoutPanel2.Controls.Add(Me.Label21, 0, 6)
+        Me.TableLayoutPanel2.Controls.Add(Me.Label15, 0, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.ProductDetail, 0, 8)
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(36, 45)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
-        Me.TableLayoutPanel2.RowCount = 7
+        Me.TableLayoutPanel2.RowCount = 9
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571!))
@@ -360,6 +415,8 @@ Partial Class FormMain
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel2.Size = New System.Drawing.Size(474, 234)
         Me.TableLayoutPanel2.TabIndex = 15
         '
@@ -367,7 +424,7 @@ Partial Class FormMain
         '
         Me.Label15.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(3, 10)
+        Me.Label15.Location = New System.Drawing.Point(3, 7)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(58, 13)
         Me.Label15.TabIndex = 5
@@ -376,7 +433,7 @@ Partial Class FormMain
         '
         'TextBoxQuantity
         '
-        Me.TextBoxQuantity.Location = New System.Drawing.Point(120, 135)
+        Me.TextBoxQuantity.Location = New System.Drawing.Point(120, 111)
         Me.TextBoxQuantity.Name = "TextBoxQuantity"
         Me.TextBoxQuantity.Size = New System.Drawing.Size(121, 20)
         Me.TextBoxQuantity.TabIndex = 14
@@ -385,7 +442,7 @@ Partial Class FormMain
         '
         Me.Label16.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(3, 43)
+        Me.Label16.Location = New System.Drawing.Point(3, 34)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(78, 13)
         Me.Label16.TabIndex = 6
@@ -396,7 +453,7 @@ Partial Class FormMain
         '
         Me.Label17.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(3, 76)
+        Me.Label17.Location = New System.Drawing.Point(3, 61)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(82, 13)
         Me.Label17.TabIndex = 9
@@ -405,7 +462,7 @@ Partial Class FormMain
         '
         'TextBoxProductName
         '
-        Me.TextBoxProductName.Location = New System.Drawing.Point(120, 36)
+        Me.TextBoxProductName.Location = New System.Drawing.Point(120, 30)
         Me.TextBoxProductName.Name = "TextBoxProductName"
         Me.TextBoxProductName.Size = New System.Drawing.Size(200, 20)
         Me.TextBoxProductName.TabIndex = 8
@@ -414,7 +471,7 @@ Partial Class FormMain
         '
         Me.Label20.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Label20.AutoSize = True
-        Me.Label20.Location = New System.Drawing.Point(3, 175)
+        Me.Label20.Location = New System.Drawing.Point(3, 142)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(91, 13)
         Me.Label20.TabIndex = 12
@@ -433,7 +490,7 @@ Partial Class FormMain
         '
         Me.Label18.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(3, 109)
+        Me.Label18.Location = New System.Drawing.Point(3, 88)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(90, 13)
         Me.Label18.TabIndex = 10
@@ -444,7 +501,7 @@ Partial Class FormMain
         '
         Me.Label19.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(3, 142)
+        Me.Label19.Location = New System.Drawing.Point(3, 115)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(49, 13)
         Me.Label19.TabIndex = 11
@@ -453,7 +510,7 @@ Partial Class FormMain
         '
         'DateTimePickerExpirationDate
         '
-        Me.DateTimePickerExpirationDate.Location = New System.Drawing.Point(120, 69)
+        Me.DateTimePickerExpirationDate.Location = New System.Drawing.Point(120, 57)
         Me.DateTimePickerExpirationDate.Name = "DateTimePickerExpirationDate"
         Me.DateTimePickerExpirationDate.Size = New System.Drawing.Size(200, 20)
         Me.DateTimePickerExpirationDate.TabIndex = 16
@@ -461,7 +518,7 @@ Partial Class FormMain
         'ComboBoxNotifcationDays
         '
         Me.ComboBoxNotifcationDays.FormattingEnabled = True
-        Me.ComboBoxNotifcationDays.Location = New System.Drawing.Point(120, 102)
+        Me.ComboBoxNotifcationDays.Location = New System.Drawing.Point(120, 84)
         Me.ComboBoxNotifcationDays.Name = "ComboBoxNotifcationDays"
         Me.ComboBoxNotifcationDays.Size = New System.Drawing.Size(121, 21)
         Me.ComboBoxNotifcationDays.TabIndex = 17
@@ -469,10 +526,29 @@ Partial Class FormMain
         'ComboBoxLocation
         '
         Me.ComboBoxLocation.FormattingEnabled = True
-        Me.ComboBoxLocation.Location = New System.Drawing.Point(120, 168)
+        Me.ComboBoxLocation.Location = New System.Drawing.Point(120, 138)
         Me.ComboBoxLocation.Name = "ComboBoxLocation"
         Me.ComboBoxLocation.Size = New System.Drawing.Size(200, 21)
         Me.ComboBoxLocation.TabIndex = 18
+        '
+        'Label21
+        '
+        Me.Label21.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label21.AutoSize = True
+        Me.Label21.Location = New System.Drawing.Point(32, 169)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(52, 13)
+        Me.Label21.TabIndex = 19
+        Me.Label21.Text = "Category:"
+        Me.Label21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'ComboBoxCategory
+        '
+        Me.ComboBoxCategory.FormattingEnabled = True
+        Me.ComboBoxCategory.Location = New System.Drawing.Point(120, 165)
+        Me.ComboBoxCategory.Name = "ComboBoxCategory"
+        Me.ComboBoxCategory.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBoxCategory.TabIndex = 20
         '
         'Label12
         '
@@ -504,6 +580,7 @@ Partial Class FormMain
         '
         'TabPageUpdateItem
         '
+        Me.TabPageUpdateItem.Controls.Add(Me.TableLayoutPanel3)
         Me.TabPageUpdateItem.Controls.Add(Me.Label13)
         Me.TabPageUpdateItem.Controls.Add(Me.DataGridView1)
         Me.TabPageUpdateItem.Controls.Add(Me.Button1)
@@ -529,7 +606,7 @@ Partial Class FormMain
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(8, 52)
+        Me.DataGridView1.Location = New System.Drawing.Point(8, 22)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(742, 361)
         Me.DataGridView1.TabIndex = 4
@@ -554,6 +631,7 @@ Partial Class FormMain
         '
         'TabPageSearch
         '
+        Me.TabPageSearch.Controls.Add(Me.TableLayoutPanel4)
         Me.TabPageSearch.Controls.Add(Me.Label14)
         Me.TabPageSearch.Controls.Add(Me.Button3)
         Me.TabPageSearch.Controls.Add(Me.Button4)
@@ -590,39 +668,8 @@ Partial Class FormMain
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(75, 23)
         Me.Button4.TabIndex = 2
-        Me.Button4.Text = "Update"
+        Me.Button4.Text = "Search"
         Me.Button4.UseVisualStyleBackColor = True
-        '
-        'TabPageReports
-        '
-        Me.TabPageReports.Controls.Add(Me.DataGridViewReport)
-        Me.TabPageReports.Controls.Add(Me.Button5)
-        Me.TabPageReports.Controls.Add(Me.Button6)
-        Me.TabPageReports.Location = New System.Drawing.Point(4, 22)
-        Me.TabPageReports.Name = "TabPageReports"
-        Me.TabPageReports.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPageReports.Size = New System.Drawing.Size(758, 474)
-        Me.TabPageReports.TabIndex = 3
-        Me.TabPageReports.Text = "TabPageReports"
-        Me.TabPageReports.UseVisualStyleBackColor = True
-        '
-        'Button5
-        '
-        Me.Button5.Location = New System.Drawing.Point(675, 443)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(75, 23)
-        Me.Button5.TabIndex = 3
-        Me.Button5.Text = "Done"
-        Me.Button5.UseVisualStyleBackColor = True
-        '
-        'Button6
-        '
-        Me.Button6.Location = New System.Drawing.Point(594, 443)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(75, 23)
-        Me.Button6.TabIndex = 2
-        Me.Button6.Text = "Update"
-        Me.Button6.UseVisualStyleBackColor = True
         '
         'TabPageSettings
         '
@@ -794,30 +841,559 @@ Partial Class FormMain
         Me.Button8.Text = "Update"
         Me.Button8.UseVisualStyleBackColor = True
         '
-        'Label21
+        'Unit
         '
-        Me.Label21.AutoSize = True
-        Me.Label21.Location = New System.Drawing.Point(3, 198)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(49, 13)
-        Me.Label21.TabIndex = 19
-        Me.Label21.Text = "Category"
+        Me.Unit.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Unit.AutoSize = True
+        Me.Unit.Location = New System.Drawing.Point(44, 192)
+        Me.Unit.Name = "Unit"
+        Me.Unit.Size = New System.Drawing.Size(29, 13)
+        Me.Unit.TabIndex = 21
+        Me.Unit.Text = "Unit:"
         '
-        'ComboBoxCategory
+        'ProductDetail
         '
-        Me.ComboBoxCategory.FormattingEnabled = True
-        Me.ComboBoxCategory.Location = New System.Drawing.Point(120, 201)
-        Me.ComboBoxCategory.Name = "ComboBoxCategory"
-        Me.ComboBoxCategory.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBoxCategory.TabIndex = 20
+        Me.ProductDetail.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.ProductDetail.AutoSize = True
+        Me.ProductDetail.Location = New System.Drawing.Point(20, 215)
+        Me.ProductDetail.Name = "ProductDetail"
+        Me.ProductDetail.Size = New System.Drawing.Size(77, 13)
+        Me.ProductDetail.TabIndex = 22
+        Me.ProductDetail.Text = "Product Detail:"
         '
-        'DataGridViewReport
+        'ComboBox1
         '
-        Me.DataGridViewReport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridViewReport.Location = New System.Drawing.Point(19, 91)
-        Me.DataGridViewReport.Name = "DataGridViewReport"
-        Me.DataGridViewReport.Size = New System.Drawing.Size(731, 190)
-        Me.DataGridViewReport.TabIndex = 4
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(120, 192)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox1.TabIndex = 23
+        '
+        'TextBox7
+        '
+        Me.TextBox7.Location = New System.Drawing.Point(120, 212)
+        Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox7.TabIndex = 24
+        '
+        'TableLayoutPanel3
+        '
+        Me.TableLayoutPanel3.ColumnCount = 3
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.0!))
+        Me.TableLayoutPanel3.Controls.Add(Me.Label22, 0, 0)
+        Me.TableLayoutPanel3.Controls.Add(Me.TextBox8, 2, 4)
+        Me.TableLayoutPanel3.Controls.Add(Me.Label23, 0, 1)
+        Me.TableLayoutPanel3.Controls.Add(Me.Label24, 0, 2)
+        Me.TableLayoutPanel3.Controls.Add(Me.TextBox9, 2, 1)
+        Me.TableLayoutPanel3.Controls.Add(Me.Label25, 0, 5)
+        Me.TableLayoutPanel3.Controls.Add(Me.Label26, 0, 3)
+        Me.TableLayoutPanel3.Controls.Add(Me.Label27, 0, 4)
+        Me.TableLayoutPanel3.Controls.Add(Me.DateTimePicker1, 2, 2)
+        Me.TableLayoutPanel3.Controls.Add(Me.ComboBox2, 2, 3)
+        Me.TableLayoutPanel3.Controls.Add(Me.ComboBox3, 2, 5)
+        Me.TableLayoutPanel3.Controls.Add(Me.Label28, 0, 6)
+        Me.TableLayoutPanel3.Controls.Add(Me.ComboBox4, 2, 6)
+        Me.TableLayoutPanel3.Controls.Add(Me.Label29, 0, 7)
+        Me.TableLayoutPanel3.Controls.Add(Me.Label30, 0, 8)
+        Me.TableLayoutPanel3.Controls.Add(Me.ComboBox5, 2, 7)
+        Me.TableLayoutPanel3.Controls.Add(Me.TextBox11, 2, 8)
+        Me.TableLayoutPanel3.Controls.Add(Me.ComboBox6, 1, 0)
+        Me.TableLayoutPanel3.Controls.Add(Me.TextBox10, 1, 6)
+        Me.TableLayoutPanel3.Controls.Add(Me.TextBox13, 1, 2)
+        Me.TableLayoutPanel3.Controls.Add(Me.TextBox14, 1, 3)
+        Me.TableLayoutPanel3.Controls.Add(Me.TextBox15, 1, 4)
+        Me.TableLayoutPanel3.Controls.Add(Me.TextBox16, 1, 5)
+        Me.TableLayoutPanel3.Controls.Add(Me.TextBox17, 1, 7)
+        Me.TableLayoutPanel3.Controls.Add(Me.TextBox18, 1, 8)
+        Me.TableLayoutPanel3.Controls.Add(Me.Label31, 2, 0)
+        Me.TableLayoutPanel3.Controls.Add(Me.TextBox12, 1, 1)
+        Me.TableLayoutPanel3.Location = New System.Drawing.Point(8, 22)
+        Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
+        Me.TableLayoutPanel3.RowCount = 9
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.49953!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.49953!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.49953!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.49953!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.49953!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.49953!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.49953!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.50328!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 19.0!))
+        Me.TableLayoutPanel3.Size = New System.Drawing.Size(742, 361)
+        Me.TableLayoutPanel3.TabIndex = 16
+        '
+        'Label22
+        '
+        Me.Label22.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Label22.AutoSize = True
+        Me.Label22.Location = New System.Drawing.Point(3, 14)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(47, 13)
+        Me.Label22.TabIndex = 5
+        Me.Label22.Text = "Product:"
+        Me.Label22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'TextBox8
+        '
+        Me.TextBox8.Location = New System.Drawing.Point(462, 171)
+        Me.TextBox8.Name = "TextBox8"
+        Me.TextBox8.Size = New System.Drawing.Size(121, 20)
+        Me.TextBox8.TabIndex = 14
+        '
+        'Label23
+        '
+        Me.Label23.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Label23.AutoSize = True
+        Me.Label23.Location = New System.Drawing.Point(3, 56)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(78, 13)
+        Me.Label23.TabIndex = 6
+        Me.Label23.Text = "Product Name:"
+        Me.Label23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label24
+        '
+        Me.Label24.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Label24.AutoSize = True
+        Me.Label24.Location = New System.Drawing.Point(3, 98)
+        Me.Label24.Name = "Label24"
+        Me.Label24.Size = New System.Drawing.Size(82, 13)
+        Me.Label24.TabIndex = 9
+        Me.Label24.Text = "Expiration Date:"
+        Me.Label24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'TextBox9
+        '
+        Me.TextBox9.Location = New System.Drawing.Point(462, 45)
+        Me.TextBox9.Name = "TextBox9"
+        Me.TextBox9.Size = New System.Drawing.Size(200, 20)
+        Me.TextBox9.TabIndex = 8
+        '
+        'Label25
+        '
+        Me.Label25.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Label25.AutoSize = True
+        Me.Label25.Location = New System.Drawing.Point(3, 224)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(91, 13)
+        Me.Label25.TabIndex = 12
+        Me.Label25.Text = "Storage Location:"
+        Me.Label25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label26
+        '
+        Me.Label26.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Label26.AutoSize = True
+        Me.Label26.Location = New System.Drawing.Point(3, 140)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(90, 13)
+        Me.Label26.TabIndex = 10
+        Me.Label26.Text = "Notification Days:"
+        Me.Label26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label27
+        '
+        Me.Label27.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Label27.AutoSize = True
+        Me.Label27.Location = New System.Drawing.Point(3, 182)
+        Me.Label27.Name = "Label27"
+        Me.Label27.Size = New System.Drawing.Size(49, 13)
+        Me.Label27.TabIndex = 11
+        Me.Label27.Text = "Quantity:"
+        Me.Label27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Location = New System.Drawing.Point(462, 87)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
+        Me.DateTimePicker1.TabIndex = 16
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Location = New System.Drawing.Point(462, 129)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox2.TabIndex = 17
+        '
+        'ComboBox3
+        '
+        Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Location = New System.Drawing.Point(462, 213)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(200, 21)
+        Me.ComboBox3.TabIndex = 18
+        '
+        'Label28
+        '
+        Me.Label28.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label28.AutoSize = True
+        Me.Label28.Location = New System.Drawing.Point(64, 266)
+        Me.Label28.Name = "Label28"
+        Me.Label28.Size = New System.Drawing.Size(49, 13)
+        Me.Label28.TabIndex = 19
+        Me.Label28.Text = "Category"
+        '
+        'ComboBox4
+        '
+        Me.ComboBox4.FormattingEnabled = True
+        Me.ComboBox4.Location = New System.Drawing.Point(462, 255)
+        Me.ComboBox4.Name = "ComboBox4"
+        Me.ComboBox4.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox4.TabIndex = 20
+        '
+        'Label29
+        '
+        Me.Label29.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label29.AutoSize = True
+        Me.Label29.Location = New System.Drawing.Point(76, 308)
+        Me.Label29.Name = "Label29"
+        Me.Label29.Size = New System.Drawing.Size(26, 13)
+        Me.Label29.TabIndex = 21
+        Me.Label29.Text = "Unit"
+        '
+        'Label30
+        '
+        Me.Label30.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label30.AutoSize = True
+        Me.Label30.Location = New System.Drawing.Point(50, 342)
+        Me.Label30.Name = "Label30"
+        Me.Label30.Size = New System.Drawing.Size(77, 13)
+        Me.Label30.TabIndex = 22
+        Me.Label30.Text = "Product Detail:"
+        '
+        'ComboBox5
+        '
+        Me.ComboBox5.FormattingEnabled = True
+        Me.ComboBox5.Location = New System.Drawing.Point(462, 297)
+        Me.ComboBox5.Name = "ComboBox5"
+        Me.ComboBox5.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox5.TabIndex = 23
+        '
+        'TextBox11
+        '
+        Me.TextBox11.Location = New System.Drawing.Point(462, 339)
+        Me.TextBox11.Name = "TextBox11"
+        Me.TextBox11.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox11.TabIndex = 24
+        '
+        'ComboBox6
+        '
+        Me.ComboBox6.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.ComboBox6.FormattingEnabled = True
+        Me.ComboBox6.Location = New System.Drawing.Point(258, 10)
+        Me.ComboBox6.Name = "ComboBox6"
+        Me.ComboBox6.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox6.TabIndex = 25
+        '
+        'Label31
+        '
+        Me.Label31.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label31.AutoSize = True
+        Me.Label31.Location = New System.Drawing.Point(600, 14)
+        Me.Label31.Name = "Label31"
+        Me.Label31.Size = New System.Drawing.Size(0, 13)
+        Me.Label31.TabIndex = 26
+        '
+        'TextBox10
+        '
+        Me.TextBox10.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.TextBox10.Location = New System.Drawing.Point(268, 263)
+        Me.TextBox10.Name = "TextBox10"
+        Me.TextBox10.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox10.TabIndex = 27
+        '
+        'TextBox12
+        '
+        Me.TextBox12.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.TextBox12.Location = New System.Drawing.Point(268, 53)
+        Me.TextBox12.Name = "TextBox12"
+        Me.TextBox12.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox12.TabIndex = 28
+        '
+        'TextBox13
+        '
+        Me.TextBox13.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.TextBox13.Location = New System.Drawing.Point(268, 95)
+        Me.TextBox13.Name = "TextBox13"
+        Me.TextBox13.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox13.TabIndex = 29
+        '
+        'TextBox14
+        '
+        Me.TextBox14.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.TextBox14.Location = New System.Drawing.Point(268, 137)
+        Me.TextBox14.Name = "TextBox14"
+        Me.TextBox14.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox14.TabIndex = 30
+        '
+        'TextBox15
+        '
+        Me.TextBox15.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.TextBox15.Location = New System.Drawing.Point(268, 179)
+        Me.TextBox15.Name = "TextBox15"
+        Me.TextBox15.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox15.TabIndex = 31
+        '
+        'TextBox16
+        '
+        Me.TextBox16.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.TextBox16.Location = New System.Drawing.Point(268, 221)
+        Me.TextBox16.Name = "TextBox16"
+        Me.TextBox16.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox16.TabIndex = 32
+        '
+        'TextBox17
+        '
+        Me.TextBox17.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.TextBox17.Location = New System.Drawing.Point(268, 305)
+        Me.TextBox17.Name = "TextBox17"
+        Me.TextBox17.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox17.TabIndex = 33
+        '
+        'TextBox18
+        '
+        Me.TextBox18.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.TextBox18.Location = New System.Drawing.Point(268, 339)
+        Me.TextBox18.Name = "TextBox18"
+        Me.TextBox18.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox18.TabIndex = 34
+        '
+        'TableLayoutPanel4
+        '
+        Me.TableLayoutPanel4.ColumnCount = 2
+        Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.89451!))
+        Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.10549!))
+        Me.TableLayoutPanel4.Controls.Add(Me.TextBox19, 1, 4)
+        Me.TableLayoutPanel4.Controls.Add(Me.Label32, 0, 1)
+        Me.TableLayoutPanel4.Controls.Add(Me.Label33, 0, 2)
+        Me.TableLayoutPanel4.Controls.Add(Me.TextBox20, 1, 1)
+        Me.TableLayoutPanel4.Controls.Add(Me.Label34, 0, 5)
+        Me.TableLayoutPanel4.Controls.Add(Me.TextBox21, 1, 0)
+        Me.TableLayoutPanel4.Controls.Add(Me.Label35, 0, 3)
+        Me.TableLayoutPanel4.Controls.Add(Me.Label36, 0, 4)
+        Me.TableLayoutPanel4.Controls.Add(Me.DateTimePicker2, 1, 2)
+        Me.TableLayoutPanel4.Controls.Add(Me.ComboBox7, 1, 3)
+        Me.TableLayoutPanel4.Controls.Add(Me.ComboBox8, 1, 5)
+        Me.TableLayoutPanel4.Controls.Add(Me.ComboBox9, 1, 6)
+        Me.TableLayoutPanel4.Controls.Add(Me.Label37, 0, 7)
+        Me.TableLayoutPanel4.Controls.Add(Me.ComboBox10, 1, 7)
+        Me.TableLayoutPanel4.Controls.Add(Me.TextBox22, 1, 8)
+        Me.TableLayoutPanel4.Controls.Add(Me.Label38, 0, 6)
+        Me.TableLayoutPanel4.Controls.Add(Me.Label39, 0, 0)
+        Me.TableLayoutPanel4.Controls.Add(Me.Label40, 0, 8)
+        Me.TableLayoutPanel4.Location = New System.Drawing.Point(3, 0)
+        Me.TableLayoutPanel4.Name = "TableLayoutPanel4"
+        Me.TableLayoutPanel4.RowCount = 9
+        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.49953!))
+        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.49953!))
+        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.49953!))
+        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.49953!))
+        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.49953!))
+        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.49953!))
+        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.49953!))
+        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.50328!))
+        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel4.Size = New System.Drawing.Size(759, 385)
+        Me.TableLayoutPanel4.TabIndex = 16
+        '
+        'TextBox19
+        '
+        Me.TextBox19.Location = New System.Drawing.Point(191, 183)
+        Me.TextBox19.Name = "TextBox19"
+        Me.TextBox19.Size = New System.Drawing.Size(121, 20)
+        Me.TextBox19.TabIndex = 14
+        '
+        'Label32
+        '
+        Me.Label32.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Label32.AutoSize = True
+        Me.Label32.Location = New System.Drawing.Point(3, 61)
+        Me.Label32.Name = "Label32"
+        Me.Label32.Size = New System.Drawing.Size(78, 13)
+        Me.Label32.TabIndex = 6
+        Me.Label32.Text = "Product Name:"
+        Me.Label32.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label33
+        '
+        Me.Label33.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Label33.AutoSize = True
+        Me.Label33.Location = New System.Drawing.Point(3, 106)
+        Me.Label33.Name = "Label33"
+        Me.Label33.Size = New System.Drawing.Size(82, 13)
+        Me.Label33.TabIndex = 9
+        Me.Label33.Text = "Expiration Date:"
+        Me.Label33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'TextBox20
+        '
+        Me.TextBox20.Location = New System.Drawing.Point(191, 48)
+        Me.TextBox20.Name = "TextBox20"
+        Me.TextBox20.Size = New System.Drawing.Size(200, 20)
+        Me.TextBox20.TabIndex = 8
+        '
+        'Label34
+        '
+        Me.Label34.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Label34.AutoSize = True
+        Me.Label34.Location = New System.Drawing.Point(3, 241)
+        Me.Label34.Name = "Label34"
+        Me.Label34.Size = New System.Drawing.Size(91, 13)
+        Me.Label34.TabIndex = 12
+        Me.Label34.Text = "Storage Location:"
+        Me.Label34.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'TextBox21
+        '
+        Me.TextBox21.Location = New System.Drawing.Point(191, 3)
+        Me.TextBox21.Name = "TextBox21"
+        Me.TextBox21.ReadOnly = True
+        Me.TextBox21.Size = New System.Drawing.Size(72, 20)
+        Me.TextBox21.TabIndex = 7
+        '
+        'Label35
+        '
+        Me.Label35.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Label35.AutoSize = True
+        Me.Label35.Location = New System.Drawing.Point(3, 151)
+        Me.Label35.Name = "Label35"
+        Me.Label35.Size = New System.Drawing.Size(90, 13)
+        Me.Label35.TabIndex = 10
+        Me.Label35.Text = "Notification Days:"
+        Me.Label35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label36
+        '
+        Me.Label36.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Label36.AutoSize = True
+        Me.Label36.Location = New System.Drawing.Point(3, 196)
+        Me.Label36.Name = "Label36"
+        Me.Label36.Size = New System.Drawing.Size(49, 13)
+        Me.Label36.TabIndex = 11
+        Me.Label36.Text = "Quantity:"
+        Me.Label36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'DateTimePicker2
+        '
+        Me.DateTimePicker2.Location = New System.Drawing.Point(191, 93)
+        Me.DateTimePicker2.Name = "DateTimePicker2"
+        Me.DateTimePicker2.Size = New System.Drawing.Size(200, 20)
+        Me.DateTimePicker2.TabIndex = 16
+        '
+        'ComboBox7
+        '
+        Me.ComboBox7.FormattingEnabled = True
+        Me.ComboBox7.Location = New System.Drawing.Point(191, 138)
+        Me.ComboBox7.Name = "ComboBox7"
+        Me.ComboBox7.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox7.TabIndex = 17
+        '
+        'ComboBox8
+        '
+        Me.ComboBox8.FormattingEnabled = True
+        Me.ComboBox8.Location = New System.Drawing.Point(191, 228)
+        Me.ComboBox8.Name = "ComboBox8"
+        Me.ComboBox8.Size = New System.Drawing.Size(200, 21)
+        Me.ComboBox8.TabIndex = 18
+        '
+        'ComboBox9
+        '
+        Me.ComboBox9.FormattingEnabled = True
+        Me.ComboBox9.Location = New System.Drawing.Point(191, 273)
+        Me.ComboBox9.Name = "ComboBox9"
+        Me.ComboBox9.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox9.TabIndex = 20
+        '
+        'Label37
+        '
+        Me.Label37.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label37.AutoSize = True
+        Me.Label37.Location = New System.Drawing.Point(79, 331)
+        Me.Label37.Name = "Label37"
+        Me.Label37.Size = New System.Drawing.Size(29, 13)
+        Me.Label37.TabIndex = 21
+        Me.Label37.Text = "Unit:"
+        '
+        'ComboBox10
+        '
+        Me.ComboBox10.FormattingEnabled = True
+        Me.ComboBox10.Location = New System.Drawing.Point(191, 318)
+        Me.ComboBox10.Name = "ComboBox10"
+        Me.ComboBox10.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox10.TabIndex = 23
+        '
+        'TextBox22
+        '
+        Me.TextBox22.Location = New System.Drawing.Point(191, 363)
+        Me.TextBox22.Name = "TextBox22"
+        Me.TextBox22.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox22.TabIndex = 24
+        '
+        'Label38
+        '
+        Me.Label38.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label38.AutoSize = True
+        Me.Label38.Location = New System.Drawing.Point(68, 286)
+        Me.Label38.Name = "Label38"
+        Me.Label38.Size = New System.Drawing.Size(52, 13)
+        Me.Label38.TabIndex = 19
+        Me.Label38.Text = "Category:"
+        Me.Label38.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label39
+        '
+        Me.Label39.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Label39.AutoSize = True
+        Me.Label39.Location = New System.Drawing.Point(3, 16)
+        Me.Label39.Name = "Label39"
+        Me.Label39.Size = New System.Drawing.Size(58, 13)
+        Me.Label39.TabIndex = 5
+        Me.Label39.Text = "ProductID:"
+        Me.Label39.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label40
+        '
+        Me.Label40.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label40.AutoSize = True
+        Me.Label40.Location = New System.Drawing.Point(55, 366)
+        Me.Label40.Name = "Label40"
+        Me.Label40.Size = New System.Drawing.Size(77, 13)
+        Me.Label40.TabIndex = 22
+        Me.Label40.Text = "Product Detail:"
+        '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(594, 443)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(75, 23)
+        Me.Button6.TabIndex = 2
+        Me.Button6.Text = "Update"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(675, 443)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(75, 23)
+        Me.Button5.TabIndex = 3
+        Me.Button5.Text = "Done"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'TabPageReports
+        '
+        Me.TabPageReports.Controls.Add(Me.Button5)
+        Me.TabPageReports.Controls.Add(Me.Button6)
+        Me.TabPageReports.Location = New System.Drawing.Point(4, 22)
+        Me.TabPageReports.Name = "TabPageReports"
+        Me.TabPageReports.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPageReports.Size = New System.Drawing.Size(758, 474)
+        Me.TabPageReports.TabIndex = 3
+        Me.TabPageReports.Text = "TabPageReports"
+        Me.TabPageReports.UseVisualStyleBackColor = True
         '
         'FormMain
         '
@@ -846,10 +1422,13 @@ Partial Class FormMain
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPageSearch.ResumeLayout(False)
         Me.TabPageSearch.PerformLayout()
-        Me.TabPageReports.ResumeLayout(False)
         Me.TabPageSettings.ResumeLayout(False)
         Me.TabPageSettings.PerformLayout()
-        CType(Me.DataGridViewReport, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TableLayoutPanel3.ResumeLayout(False)
+        Me.TableLayoutPanel3.PerformLayout()
+        Me.TableLayoutPanel4.ResumeLayout(False)
+        Me.TableLayoutPanel4.PerformLayout()
+        Me.TabPageReports.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -857,7 +1436,6 @@ Partial Class FormMain
     Friend WithEvents TabPageAddItem As System.Windows.Forms.TabPage
     Friend WithEvents TabPageUpdateItem As System.Windows.Forms.TabPage
     Friend WithEvents TabPageSearch As System.Windows.Forms.TabPage
-    Friend WithEvents TabPageReports As System.Windows.Forms.TabPage
     Friend WithEvents TabPageSettings As System.Windows.Forms.TabPage
     Friend WithEvents TabPageMain As System.Windows.Forms.TabPage
     Friend WithEvents TableLayoutPanel1 As System.Windows.Forms.TableLayoutPanel
@@ -879,8 +1457,6 @@ Partial Class FormMain
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents Button5 As System.Windows.Forms.Button
-    Friend WithEvents Button6 As System.Windows.Forms.Button
     Friend WithEvents Button7 As System.Windows.Forms.Button
     Friend WithEvents Button8 As System.Windows.Forms.Button
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
@@ -920,5 +1496,58 @@ Partial Class FormMain
     Friend WithEvents ButtonAddProduct As System.Windows.Forms.Button
     Friend WithEvents Label21 As System.Windows.Forms.Label
     Friend WithEvents ComboBoxCategory As System.Windows.Forms.ComboBox
-    Friend WithEvents DataGridViewReport As System.Windows.Forms.DataGridView
+    Friend WithEvents Unit As System.Windows.Forms.Label
+    Friend WithEvents ProductDetail As System.Windows.Forms.Label
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
+    Friend WithEvents TableLayoutPanel3 As System.Windows.Forms.TableLayoutPanel
+    Friend WithEvents Label22 As System.Windows.Forms.Label
+    Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
+    Friend WithEvents Label23 As System.Windows.Forms.Label
+    Friend WithEvents Label24 As System.Windows.Forms.Label
+    Friend WithEvents TextBox9 As System.Windows.Forms.TextBox
+    Friend WithEvents Label25 As System.Windows.Forms.Label
+    Friend WithEvents Label26 As System.Windows.Forms.Label
+    Friend WithEvents Label27 As System.Windows.Forms.Label
+    Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
+    Friend WithEvents ComboBox3 As System.Windows.Forms.ComboBox
+    Friend WithEvents Label28 As System.Windows.Forms.Label
+    Friend WithEvents ComboBox4 As System.Windows.Forms.ComboBox
+    Friend WithEvents Label29 As System.Windows.Forms.Label
+    Friend WithEvents Label30 As System.Windows.Forms.Label
+    Friend WithEvents ComboBox5 As System.Windows.Forms.ComboBox
+    Friend WithEvents TextBox11 As System.Windows.Forms.TextBox
+    Friend WithEvents ComboBox6 As System.Windows.Forms.ComboBox
+    Friend WithEvents Label31 As System.Windows.Forms.Label
+    Friend WithEvents TextBox10 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox12 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox13 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox14 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox15 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox16 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox17 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox18 As System.Windows.Forms.TextBox
+    Friend WithEvents TableLayoutPanel4 As System.Windows.Forms.TableLayoutPanel
+    Friend WithEvents TextBox19 As System.Windows.Forms.TextBox
+    Friend WithEvents Label32 As System.Windows.Forms.Label
+    Friend WithEvents Label33 As System.Windows.Forms.Label
+    Friend WithEvents TextBox20 As System.Windows.Forms.TextBox
+    Friend WithEvents Label34 As System.Windows.Forms.Label
+    Friend WithEvents TextBox21 As System.Windows.Forms.TextBox
+    Friend WithEvents Label35 As System.Windows.Forms.Label
+    Friend WithEvents Label36 As System.Windows.Forms.Label
+    Friend WithEvents DateTimePicker2 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents ComboBox7 As System.Windows.Forms.ComboBox
+    Friend WithEvents ComboBox8 As System.Windows.Forms.ComboBox
+    Friend WithEvents ComboBox9 As System.Windows.Forms.ComboBox
+    Friend WithEvents Label37 As System.Windows.Forms.Label
+    Friend WithEvents ComboBox10 As System.Windows.Forms.ComboBox
+    Friend WithEvents TextBox22 As System.Windows.Forms.TextBox
+    Friend WithEvents Label38 As System.Windows.Forms.Label
+    Friend WithEvents Label39 As System.Windows.Forms.Label
+    Friend WithEvents Label40 As System.Windows.Forms.Label
+    Friend WithEvents TabPageReports As System.Windows.Forms.TabPage
+    Friend WithEvents Button5 As System.Windows.Forms.Button
+    Friend WithEvents Button6 As System.Windows.Forms.Button
 End Class

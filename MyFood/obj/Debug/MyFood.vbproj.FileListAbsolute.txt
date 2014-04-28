@@ -25,3 +25,6 @@ C:\Users\mprom\Desktop\MyFood\MyFood\obj\Debug\MyFood.vbproj.GenerateResource.Ca
 C:\Users\mprom\Desktop\MyFood\MyFood\obj\Debug\MyFood.exe
 C:\Users\mprom\Desktop\MyFood\MyFood\obj\Debug\MyFood.xml
 C:\Users\mprom\Desktop\MyFood\MyFood\obj\Debug\MyFood.pdb
+C:\school\635\Team Project\20140428\MyFood\obj\Debug\MyFood.exe
+C:\school\635\Team Project\20140428\MyFood\obj\Debug\MyFood.xml
+C:\school\635\Team Project\20140428\MyFood\obj\Debug\MyFood.pdb

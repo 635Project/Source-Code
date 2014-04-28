@@ -224,4 +224,29 @@ Public Class FormMain
     Private Sub BackgroundWorkerTimer_DoWork(sender As Object, e As System.ComponentModel.DoWorkEventArgs)
         System.Windows.Forms.MessageBox.Show("TESTING")
     End Sub
+
+    Private Sub ProductDetail_Click(sender As System.Object, e As System.EventArgs) Handles ProductDetail.Click
+
+    End Sub
+
+    Private Sub Label21_Click(sender As System.Object, e As System.EventArgs) Handles Label21.Click
+
+    End Sub
+
+    Private Sub Unit_Click(sender As System.Object, e As System.EventArgs) Handles Unit.Click
+
+    End Sub
+
+    Private Sub Label15_Click(sender As System.Object, e As System.EventArgs) Handles Label15.Click
+
+    End Sub
+
+    Private Sub TableLayoutPanel3_Paint(sender As System.Object, e As System.Windows.Forms.PaintEventArgs) Handles TableLayoutPanel3.Paint
+
+    End Sub
+
+    Private Sub FormMain_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+
+        Me.ReportViewer1.RefreshReport()
+    End Sub
 End Class
